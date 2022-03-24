@@ -24,7 +24,9 @@ struct CarMapperImpl: CarMapper {
                         make: car.make,
                         licensePlate: car.licensePlate,
                         innerCleanliness: car.innerCleanliness,
-                        carImageUrl: car.carImageUrl)
+                        carImageUrl: car.carImageUrl,
+                        latitude: car.latitude,
+                        longitude: car.longitude)
         }
     }
 }

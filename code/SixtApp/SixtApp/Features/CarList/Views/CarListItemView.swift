@@ -37,7 +37,9 @@ struct CarListItem_Previews: PreviewProvider {
                                       make: "BMW",
                                       licensePlate: "M-VO0259",
                                       innerCleanliness: "REGULAR",
-                                      carImageUrl: "https://cdn.sixt.io/codingtask/images/mini.png")
+                                      carImageUrl: "https://cdn.sixt.io/codingtask/images/mini.png",
+                                      latitude: 0.0,
+                                      longitude: 0.0)
         CarListItemView(viewData: carViewData)
     }
 }

@@ -9,9 +9,10 @@ import SwiftUI
 struct SixtAppTabView: View {
     
     let carListFactory: CarListFactory
+    let carMapFactory: CarMapFactory
     var body: some View {
         TabView {
-            CarMapView()
+            CarMapView(viewModel: carMapFactory.makeModel())
                 .tabItem {
                     Image(systemName: "map")
                     Text("Map")
@@ -28,6 +29,8 @@ struct SixtAppTabView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
-        SixtAppTabView(carListFactory: AppFactory().makeCarListFactory())
+        let appFactory = AppFactory()
+        SixtAppTabView(carListFactory: appFactory.makeCarListFactory(),
+                       carMapFactory: appFactory.makeCarMapFactory())
     }
 }

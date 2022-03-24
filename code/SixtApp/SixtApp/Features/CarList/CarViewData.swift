@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import CoreLocation
 
-struct CarViewData {
+struct CarViewData: Identifiable {
     
+    let id = UUID()
     let identifier: String
     let modelName: String
     let name: String
@@ -16,4 +18,6 @@ struct CarViewData {
     let licensePlate: String
     let innerCleanliness: String
     let carImageUrl: String
+    let latitude: Double
+    let longitude: Double
 }

@@ -33,6 +33,8 @@
 		D3C0F86A27EC81B8000A4F68 /* CarMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86927EC81B8000A4F68 /* CarMapper.swift */; };
 		D3C0F86C27ECA15C000A4F68 /* CarListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86B27ECA15C000A4F68 /* CarListFactory.swift */; };
 		D3C0F86E27ECA454000A4F68 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86D27ECA454000A4F68 /* AppFactory.swift */; };
+		D3C0F87027ECCD75000A4F68 /* CarMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */; };
+		D3C0F87427ECD631000A4F68 /* CarMapFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		D3C0F86927EC81B8000A4F68 /* CarMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapper.swift; sourceTree = "<group>"; };
 		D3C0F86B27ECA15C000A4F68 /* CarListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListFactory.swift; sourceTree = "<group>"; };
 		D3C0F86D27ECA454000A4F68 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewModel.swift; sourceTree = "<group>"; };
+		D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				D3C0F84027EB508A000A4F68 /* Views */,
+				D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */,
+				D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */,
 			);
 			path = CarMap;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C0F87427ECD631000A4F68 /* CarMapFactory.swift in Sources */,
 				D3C0F85A27EB7A1A000A4F68 /* CarRepository.swift in Sources */,
 				D3C0F81127EB2D0B000A4F68 /* SixtAppTabView.swift in Sources */,
 				D3C0F86527EB7F53000A4F68 /* NetworkRequestConvertable.swift in Sources */,
@@ -445,6 +452,7 @@
 				D3C0F83F27EB485D000A4F68 /* CarMapView.swift in Sources */,
 				D3C0F86027EB7C0F000A4F68 /* NetworkService.swift in Sources */,
 				D3C0F85227EB6FE8000A4F68 /* CarListViewState.swift in Sources */,
+				D3C0F87027ECCD75000A4F68 /* CarMapViewModel.swift in Sources */,
 				D3C0F86827EB86F6000A4F68 /* Error.swift in Sources */,
 				D3C0F86327EB7F07000A4F68 /* CarRequest.swift in Sources */,
 				D3C0F84627EB6109000A4F68 /* Title.swift in Sources */,

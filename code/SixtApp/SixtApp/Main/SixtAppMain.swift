@@ -12,7 +12,8 @@ struct SixtAppMain: App {
     let appFactory = AppFactory()
     var body: some Scene {
         WindowGroup {
-            SixtAppTabView(carListFactory: appFactory.makeCarListFactory())
+            SixtAppTabView(carListFactory: appFactory.makeCarListFactory(),
+                           carMapFactory: appFactory.makeCarMapFactory())
         }
     }
 }

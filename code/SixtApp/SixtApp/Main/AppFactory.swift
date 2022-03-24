@@ -23,6 +23,10 @@ extension AppFactory {
     
     func makeCarListFactory() -> CarListFactory {
         
-        return .init(networkService: networkService)
+        .init(networkService: networkService)
+    }
+    func makeCarMapFactory() -> CarMapFactory {
+        
+        .init(networkService: networkService)
     }
 }
