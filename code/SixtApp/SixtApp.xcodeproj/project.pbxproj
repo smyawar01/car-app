@@ -16,6 +16,23 @@
 		D3C0F82C27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F82B27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift */; };
 		D3C0F83B27EB4826000A4F68 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F83A27EB4826000A4F68 /* CarListView.swift */; };
 		D3C0F83F27EB485D000A4F68 /* CarMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F83E27EB485D000A4F68 /* CarMapView.swift */; };
+		D3C0F84327EB50B6000A4F68 /* CarListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F84227EB50B6000A4F68 /* CarListItemView.swift */; };
+		D3C0F84627EB6109000A4F68 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F84527EB6109000A4F68 /* Title.swift */; };
+		D3C0F84A27EB686C000A4F68 /* CarViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F84927EB686C000A4F68 /* CarViewData.swift */; };
+		D3C0F84E27EB68F1000A4F68 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F84D27EB68F1000A4F68 /* Car.swift */; };
+		D3C0F85027EB6E95000A4F68 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F84F27EB6E95000A4F68 /* CarListViewModel.swift */; };
+		D3C0F85227EB6FE8000A4F68 /* CarListViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85127EB6FE8000A4F68 /* CarListViewState.swift */; };
+		D3C0F85627EB7759000A4F68 /* CarListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85527EB7759000A4F68 /* CarListViewModelTests.swift */; };
+		D3C0F85827EB7894000A4F68 /* FetchCarsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85727EB7894000A4F68 /* FetchCarsUseCase.swift */; };
+		D3C0F85A27EB7A1A000A4F68 /* CarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85927EB7A1A000A4F68 /* CarRepository.swift */; };
+		D3C0F85C27EB7AFA000A4F68 /* CarRepositoryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85B27EB7AFA000A4F68 /* CarRepositoryRemote.swift */; };
+		D3C0F86027EB7C0F000A4F68 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85F27EB7C0F000A4F68 /* NetworkService.swift */; };
+		D3C0F86327EB7F07000A4F68 /* CarRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86227EB7F07000A4F68 /* CarRequest.swift */; };
+		D3C0F86527EB7F53000A4F68 /* NetworkRequestConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86427EB7F53000A4F68 /* NetworkRequestConvertable.swift */; };
+		D3C0F86827EB86F6000A4F68 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86727EB86F6000A4F68 /* Error.swift */; };
+		D3C0F86A27EC81B8000A4F68 /* CarMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86927EC81B8000A4F68 /* CarMapper.swift */; };
+		D3C0F86C27ECA15C000A4F68 /* CarListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86B27ECA15C000A4F68 /* CarListFactory.swift */; };
+		D3C0F86E27ECA454000A4F68 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86D27ECA454000A4F68 /* AppFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +65,23 @@
 		D3C0F82B27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3C0F83A27EB4826000A4F68 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
 		D3C0F83E27EB485D000A4F68 /* CarMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapView.swift; sourceTree = "<group>"; };
+		D3C0F84227EB50B6000A4F68 /* CarListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemView.swift; sourceTree = "<group>"; };
+		D3C0F84527EB6109000A4F68 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		D3C0F84927EB686C000A4F68 /* CarViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewData.swift; sourceTree = "<group>"; };
+		D3C0F84D27EB68F1000A4F68 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		D3C0F84F27EB6E95000A4F68 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		D3C0F85127EB6FE8000A4F68 /* CarListViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewState.swift; sourceTree = "<group>"; };
+		D3C0F85527EB7759000A4F68 /* CarListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModelTests.swift; sourceTree = "<group>"; };
+		D3C0F85727EB7894000A4F68 /* FetchCarsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCarsUseCase.swift; sourceTree = "<group>"; };
+		D3C0F85927EB7A1A000A4F68 /* CarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepository.swift; sourceTree = "<group>"; };
+		D3C0F85B27EB7AFA000A4F68 /* CarRepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepositoryRemote.swift; sourceTree = "<group>"; };
+		D3C0F85F27EB7C0F000A4F68 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D3C0F86227EB7F07000A4F68 /* CarRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRequest.swift; sourceTree = "<group>"; };
+		D3C0F86427EB7F53000A4F68 /* NetworkRequestConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestConvertable.swift; sourceTree = "<group>"; };
+		D3C0F86727EB86F6000A4F68 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		D3C0F86927EC81B8000A4F68 /* CarMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapper.swift; sourceTree = "<group>"; };
+		D3C0F86B27ECA15C000A4F68 /* CarListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListFactory.swift; sourceTree = "<group>"; };
+		D3C0F86D27ECA454000A4F68 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +132,9 @@
 		D3C0F80D27EB2D0B000A4F68 /* SixtApp */ = {
 			isa = PBXGroup;
 			children = (
-				D3C0F83927EB47E0000A4F68 /* Feature */,
+				D3C0F85D27EB7BE1000A4F68 /* Core */,
+				D3C0F84427EB60EA000A4F68 /* CustomViews */,
+				D3C0F83927EB47E0000A4F68 /* Features */,
 				D3C0F83827EB47CA000A4F68 /* Main */,
 				D3C0F81227EB2D0D000A4F68 /* Assets.xcassets */,
 				D3C0F81427EB2D0D000A4F68 /* Preview Content */,
@@ -117,6 +153,7 @@
 		D3C0F81E27EB2D0D000A4F68 /* SixtAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				D3C0F85327EB70A1000A4F68 /* Features */,
 				D3C0F81F27EB2D0D000A4F68 /* SixtAppTests.swift */,
 			);
 			path = SixtAppTests;
@@ -134,25 +171,34 @@
 		D3C0F83827EB47CA000A4F68 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D3C0F86D27ECA454000A4F68 /* AppFactory.swift */,
 				D3C0F80E27EB2D0B000A4F68 /* SixtAppMain.swift */,
 				D3C0F81027EB2D0B000A4F68 /* SixtAppTabView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		D3C0F83927EB47E0000A4F68 /* Feature */ = {
+		D3C0F83927EB47E0000A4F68 /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				D3C0F83D27EB4839000A4F68 /* CarMap */,
 				D3C0F83C27EB482B000A4F68 /* CarList */,
 			);
-			path = Feature;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		D3C0F83C27EB482B000A4F68 /* CarList */ = {
 			isa = PBXGroup;
 			children = (
-				D3C0F83A27EB4826000A4F68 /* CarListView.swift */,
+				D3C0F84127EB5099000A4F68 /* Views */,
+				D3C0F84927EB686C000A4F68 /* CarViewData.swift */,
+				D3C0F84F27EB6E95000A4F68 /* CarListViewModel.swift */,
+				D3C0F85127EB6FE8000A4F68 /* CarListViewState.swift */,
+				D3C0F85727EB7894000A4F68 /* FetchCarsUseCase.swift */,
+				D3C0F85927EB7A1A000A4F68 /* CarRepository.swift */,
+				D3C0F85B27EB7AFA000A4F68 /* CarRepositoryRemote.swift */,
+				D3C0F86927EC81B8000A4F68 /* CarMapper.swift */,
+				D3C0F86B27ECA15C000A4F68 /* CarListFactory.swift */,
 			);
 			path = CarList;
 			sourceTree = "<group>";
@@ -160,9 +206,102 @@
 		D3C0F83D27EB4839000A4F68 /* CarMap */ = {
 			isa = PBXGroup;
 			children = (
-				D3C0F83E27EB485D000A4F68 /* CarMapView.swift */,
+				D3C0F84027EB508A000A4F68 /* Views */,
 			);
 			path = CarMap;
+			sourceTree = "<group>";
+		};
+		D3C0F84027EB508A000A4F68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F83E27EB485D000A4F68 /* CarMapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3C0F84127EB5099000A4F68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F83A27EB4826000A4F68 /* CarListView.swift */,
+				D3C0F84227EB50B6000A4F68 /* CarListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D3C0F84427EB60EA000A4F68 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F84527EB6109000A4F68 /* Title.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		D3C0F84B27EB68D9000A4F68 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F84C27EB68E2000A4F68 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D3C0F84C27EB68E2000A4F68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F84D27EB68F1000A4F68 /* Car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3C0F85327EB70A1000A4F68 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F85427EB772C000A4F68 /* CarList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D3C0F85427EB772C000A4F68 /* CarList */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F85527EB7759000A4F68 /* CarListViewModelTests.swift */,
+			);
+			path = CarList;
+			sourceTree = "<group>";
+		};
+		D3C0F85D27EB7BE1000A4F68 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F86627EB86D2000A4F68 /* Error */,
+				D3C0F84B27EB68D9000A4F68 /* Data */,
+				D3C0F85E27EB7BF3000A4F68 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D3C0F85E27EB7BF3000A4F68 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F86127EB7EE9000A4F68 /* Requests */,
+				D3C0F85F27EB7C0F000A4F68 /* NetworkService.swift */,
+				D3C0F86427EB7F53000A4F68 /* NetworkRequestConvertable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D3C0F86127EB7EE9000A4F68 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F86227EB7F07000A4F68 /* CarRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D3C0F86627EB86D2000A4F68 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F86727EB86F6000A4F68 /* Error.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +434,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C0F85A27EB7A1A000A4F68 /* CarRepository.swift in Sources */,
 				D3C0F81127EB2D0B000A4F68 /* SixtAppTabView.swift in Sources */,
+				D3C0F86527EB7F53000A4F68 /* NetworkRequestConvertable.swift in Sources */,
 				D3C0F80F27EB2D0B000A4F68 /* SixtAppMain.swift in Sources */,
+				D3C0F86E27ECA454000A4F68 /* AppFactory.swift in Sources */,
+				D3C0F84E27EB68F1000A4F68 /* Car.swift in Sources */,
+				D3C0F84327EB50B6000A4F68 /* CarListItemView.swift in Sources */,
+				D3C0F86C27ECA15C000A4F68 /* CarListFactory.swift in Sources */,
 				D3C0F83F27EB485D000A4F68 /* CarMapView.swift in Sources */,
+				D3C0F86027EB7C0F000A4F68 /* NetworkService.swift in Sources */,
+				D3C0F85227EB6FE8000A4F68 /* CarListViewState.swift in Sources */,
+				D3C0F86827EB86F6000A4F68 /* Error.swift in Sources */,
+				D3C0F86327EB7F07000A4F68 /* CarRequest.swift in Sources */,
+				D3C0F84627EB6109000A4F68 /* Title.swift in Sources */,
 				D3C0F83B27EB4826000A4F68 /* CarListView.swift in Sources */,
+				D3C0F86A27EC81B8000A4F68 /* CarMapper.swift in Sources */,
+				D3C0F84A27EB686C000A4F68 /* CarViewData.swift in Sources */,
+				D3C0F85827EB7894000A4F68 /* FetchCarsUseCase.swift in Sources */,
+				D3C0F85027EB6E95000A4F68 /* CarListViewModel.swift in Sources */,
+				D3C0F85C27EB7AFA000A4F68 /* CarRepositoryRemote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C0F82027EB2D0D000A4F68 /* SixtAppTests.swift in Sources */,
+				D3C0F85627EB7759000A4F68 /* CarListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

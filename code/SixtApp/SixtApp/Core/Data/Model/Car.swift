@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Car {
+struct Car: Decodable {
     
     let id: String
     let modelIdentifier: String
