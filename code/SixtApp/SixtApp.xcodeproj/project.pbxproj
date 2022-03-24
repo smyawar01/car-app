@@ -35,6 +35,7 @@
 		D3C0F86E27ECA454000A4F68 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86D27ECA454000A4F68 /* AppFactory.swift */; };
 		D3C0F87027ECCD75000A4F68 /* CarMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */; };
 		D3C0F87427ECD631000A4F68 /* CarMapFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */; };
+		D3C0F87827ECEB15000A4F68 /* CarMapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87727ECEB15000A4F68 /* CarMapViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		D3C0F86D27ECA454000A4F68 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
 		D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewModel.swift; sourceTree = "<group>"; };
 		D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapFactory.swift; sourceTree = "<group>"; };
+		D3C0F87727ECEB15000A4F68 /* CarMapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				D3C0F84027EB508A000A4F68 /* Views */,
 				D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */,
 				D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */,
+				D3C0F87727ECEB15000A4F68 /* CarMapViewState.swift */,
 			);
 			path = CarMap;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				D3C0F86027EB7C0F000A4F68 /* NetworkService.swift in Sources */,
 				D3C0F85227EB6FE8000A4F68 /* CarListViewState.swift in Sources */,
 				D3C0F87027ECCD75000A4F68 /* CarMapViewModel.swift in Sources */,
+				D3C0F87827ECEB15000A4F68 /* CarMapViewState.swift in Sources */,
 				D3C0F86827EB86F6000A4F68 /* Error.swift in Sources */,
 				D3C0F86327EB7F07000A4F68 /* CarRequest.swift in Sources */,
 				D3C0F84627EB6109000A4F68 /* Title.swift in Sources */,

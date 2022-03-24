@@ -13,14 +13,7 @@ struct CarMapView: View {
     let viewModel: CarMapViewModel
     @State private var cars = [CarViewData]()
     @State private var showingAlert = false
-    @State private var region = MKCoordinateRegion(
-                    center: CLLocationCoordinate2D(
-                        latitude: 48.04272047607891,
-                        longitude: 11.510795092717105),
-                    span: MKCoordinateSpan(
-                        latitudeDelta: 0.04,
-                        longitudeDelta: 0.04)
-                    )
+    @State private var region = CarMapView.region(from: 48.04272047607891, longitude: 11.510795092717105)
 
         var body: some View {
             
@@ -33,8 +26,9 @@ struct CarMapView: View {
                         switch state {
                             
                         case .initial: break
-                        case .update(let cars):
+                        case .update(let cars, let regionCenter):
                             self.cars = cars
+                            self.region = CarMapView.region(from: regionCenter.0, longitude: regionCenter.1)
                         case .loading:
                             ProgressView()
                         case .error(_):
@@ -51,6 +45,21 @@ struct CarMapView: View {
                     }
                 }
         }
+}
+
+extension CarMapView {
+    
+   static func region(from latitude: Double, longitude: Double) -> MKCoordinateRegion {
+        
+        MKCoordinateRegion(
+                        center: CLLocationCoordinate2D(
+                            latitude: latitude,
+                            longitude: longitude),
+                        span: MKCoordinateSpan(
+                            latitudeDelta: 0.2,
+                            longitudeDelta: 0.2)
+                        )
+    }
 }
 
 struct CarMapView_Previews: PreviewProvider {
