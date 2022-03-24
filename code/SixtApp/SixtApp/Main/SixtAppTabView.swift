@@ -18,6 +18,7 @@ struct SixtAppTabView: View {
         
         UITabBar.appearance().isTranslucent = false
         UITabBar.appearance().barTintColor = UIColor(named:"SecondaryColor")
+        UITabBar.appearance().backgroundColor = UIColor(named:"SecondaryColor")
         UITabBar.appearance().unselectedItemTintColor = .white
     }
     
