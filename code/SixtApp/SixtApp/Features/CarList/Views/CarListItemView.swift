@@ -24,11 +24,11 @@ struct CarListItemView: View {
 
                 } placeholder: {
                     
-                    Image("list_item_bg")
+                    Image("car.placeholder")
                         .resizable()
                         .scaledToFit()
                 }
-                .frame(width: 150, height: 100)
+                .frame(width: 200, height: 100)
 
             }
             VStack(alignment: .leading) {

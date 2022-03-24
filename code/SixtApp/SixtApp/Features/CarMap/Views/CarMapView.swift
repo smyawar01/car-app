@@ -18,8 +18,12 @@ struct CarMapView: View {
         var body: some View {
             
             Map(coordinateRegion: $region,
-                annotationItems: cars) { MapMarker(coordinate: CLLocationCoordinate2D(latitude: $0.latitude,
-                                                                                       longitude: $0.longitude)) }
+                annotationItems: cars) {
+                MapMarker(coordinate:
+                            CLLocationCoordinate2D(latitude: $0.latitude,
+                                                   longitude: $0.longitude), tint: Color("AccentColor"))
+                
+            }
                 .onAppear {
                     
                     viewModel.didStateChange = { state in

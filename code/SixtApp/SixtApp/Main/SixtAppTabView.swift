@@ -10,6 +10,17 @@ struct SixtAppTabView: View {
     
     let carListFactory: CarListFactory
     let carMapFactory: CarMapFactory
+    
+    init(carListFactory: CarListFactory, carMapFactory: CarMapFactory) {
+        
+        self.carListFactory = carListFactory
+        self.carMapFactory = carMapFactory
+        
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().barTintColor = UIColor(named:"SecondaryColor")
+        UITabBar.appearance().unselectedItemTintColor = .white
+    }
+    
     var body: some View {
         TabView {
             CarMapView(viewModel: carMapFactory.makeModel())
@@ -23,6 +34,7 @@ struct SixtAppTabView: View {
                     Text("List")
                 }
         }
+        .accentColor(Color("AccentColor"))
     }
 }
 
