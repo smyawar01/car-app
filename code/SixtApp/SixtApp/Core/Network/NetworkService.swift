@@ -26,7 +26,7 @@ struct NetworkSerivceImpl: NetworkService {
                 completion(.failure(NetworkError.transportError(error)))
                 return
             }
-            if let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode) {
+            if let response = response as? HTTPURLResponse, !(200..<300).contains(response.statusCode) {
                 
                 completion(.failure(NetworkError.serverError(response.statusCode)))
                 return
