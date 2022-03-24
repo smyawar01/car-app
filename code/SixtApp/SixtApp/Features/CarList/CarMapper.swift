@@ -1,0 +1,30 @@
+//
+//  CarMapper.swift
+//  SixtApp
+//
+//  Created by Yawar Ali on 24/03/2022.
+//
+
+import Foundation
+
+protocol CarMapper {
+    
+    func map(cars: [Car]) -> [CarViewData]
+}
+
+struct CarMapperImpl: CarMapper {
+    
+    func map(cars: [Car]) -> [CarViewData] {
+        
+        return cars.map { car in
+            
+            CarViewData(identifier: car.id,
+                        modelName: car.modelName,
+                        name: car.name,
+                        make: car.make,
+                        licensePlate: car.licensePlate,
+                        innerCleanliness: car.innerCleanliness,
+                        carImageUrl: car.carImageUrl)
+        }
+    }
+}
