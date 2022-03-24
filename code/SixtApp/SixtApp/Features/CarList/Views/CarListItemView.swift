@@ -15,10 +15,21 @@ struct CarListItemView: View {
             
             VStack(alignment: .leading){
                 Title(text: "\(viewData.make) \(viewData.name) \(viewData.modelName)")
-                Image("list_item_bg")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150, height: 100)
+                    .lineLimit(2)
+                AsyncImage(url: URL(string: viewData.carImageUrl)) { image in
+                    
+                    image
+                        .resizable()
+                        .scaledToFit()
+
+                } placeholder: {
+                    
+                    Image("list_item_bg")
+                        .resizable()
+                        .scaledToFit()
+                }
+                .frame(width: 150, height: 100)
+
             }
             VStack(alignment: .leading) {
                 Text(viewData.licensePlate)
