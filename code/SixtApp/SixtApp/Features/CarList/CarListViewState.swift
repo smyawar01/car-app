@@ -9,7 +9,8 @@ import Foundation
 
 enum CarListViewState {
     
+    case initial
     case loading
     case update([CarViewData])
-    case error
+    case error(Error)
 }
