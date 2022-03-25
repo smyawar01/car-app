@@ -2,7 +2,7 @@
 //  Mocker.swift
 //  SixtAppTests
 //
-//  Created by Yawar Ali on 25/03/2022.
+//  Created by Yawar Ali on 24/03/2022.
 //
 
 import Foundation
@@ -10,4 +10,7 @@ import Foundation
 enum Mocker {
     
     struct EmptyResponse: Decodable {}
+    enum StubError: Error {
+        case fake
+    }
 }

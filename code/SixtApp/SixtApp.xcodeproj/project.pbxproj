@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34B7CC827EDA9AB0021F86F /* CarRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CC727EDA9AB0021F86F /* CarRepositoryTests.swift */; };
+		D34B7CCA27EDAA7F0021F86F /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CC927EDAA7F0021F86F /* XCTestCase+Additions.swift */; };
+		D34B7CCC27EDAB3C0021F86F /* CarRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CCB27EDAB3C0021F86F /* CarRepositoryStub.swift */; };
 		D3C0F80F27EB2D0B000A4F68 /* SixtAppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F80E27EB2D0B000A4F68 /* SixtAppMain.swift */; };
 		D3C0F81127EB2D0B000A4F68 /* SixtAppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F81027EB2D0B000A4F68 /* SixtAppTabView.swift */; };
 		D3C0F81327EB2D0D000A4F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C0F81227EB2D0D000A4F68 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D34B7CC727EDA9AB0021F86F /* CarRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepositoryTests.swift; sourceTree = "<group>"; };
+		D34B7CC927EDAA7F0021F86F /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
+		D34B7CCB27EDAB3C0021F86F /* CarRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepositoryStub.swift; sourceTree = "<group>"; };
 		D3C0F80B27EB2D0B000A4F68 /* SixtApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C0F80E27EB2D0B000A4F68 /* SixtAppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppMain.swift; sourceTree = "<group>"; };
 		D3C0F81027EB2D0B000A4F68 /* SixtAppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppTabView.swift; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 				D3C0F85327EB70A1000A4F68 /* Features */,
 				D3C0F81F27EB2D0D000A4F68 /* SixtAppTests.swift */,
 				D3C0F87C27ED57AF000A4F68 /* NetworkServiceMock.swift */,
+				D34B7CC927EDAA7F0021F86F /* XCTestCase+Additions.swift */,
 			);
 			path = SixtAppTests;
 			sourceTree = "<group>";
@@ -285,6 +292,7 @@
 				D3C0F85527EB7759000A4F68 /* CarListViewModelTests.swift */,
 				D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */,
 				D3C0F88327ED5BCE000A4F68 /* CarMapperTests.swift */,
+				D34B7CC727EDA9AB0021F86F /* CarRepositoryTests.swift */,
 			);
 			path = CarList;
 			sourceTree = "<group>";
@@ -329,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				D3C0F87F27ED59F3000A4F68 /* Mocker.swift */,
+				D34B7CCB27EDAB3C0021F86F /* CarRepositoryStub.swift */,
 			);
 			path = Mocker;
 			sourceTree = "<group>";
@@ -493,12 +502,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34B7CCC27EDAB3C0021F86F /* CarRepositoryStub.swift in Sources */,
 				D3C0F88027ED59F3000A4F68 /* Mocker.swift in Sources */,
 				D3C0F88427ED5BCE000A4F68 /* CarMapperTests.swift in Sources */,
 				D3C0F87D27ED57AF000A4F68 /* NetworkServiceMock.swift in Sources */,
 				D3C0F82027EB2D0D000A4F68 /* SixtAppTests.swift in Sources */,
 				D3C0F87A27ED546F000A4F68 /* CarListFactoryTests.swift in Sources */,
 				D3C0F85627EB7759000A4F68 /* CarListViewModelTests.swift in Sources */,
+				D34B7CCA27EDAA7F0021F86F /* XCTestCase+Additions.swift in Sources */,
+				D34B7CC827EDA9AB0021F86F /* CarRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

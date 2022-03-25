@@ -13,7 +13,7 @@ protocol CarRepository {
 }
 struct CarRepositoryImpl: CarRepository {
     
-    let carRepositoryRemote: CarRepositoryRemote
+    let carRepositoryRemote: CarRepository
     
     func getAll(completion: @escaping ((Result<[Car], Error>) -> Void)) {
         
