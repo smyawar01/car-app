@@ -36,6 +36,10 @@
 		D3C0F87027ECCD75000A4F68 /* CarMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */; };
 		D3C0F87427ECD631000A4F68 /* CarMapFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */; };
 		D3C0F87827ECEB15000A4F68 /* CarMapViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87727ECEB15000A4F68 /* CarMapViewState.swift */; };
+		D3C0F87A27ED546F000A4F68 /* CarListFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */; };
+		D3C0F87D27ED57AF000A4F68 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87C27ED57AF000A4F68 /* NetworkServiceMock.swift */; };
+		D3C0F88027ED59F3000A4F68 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87F27ED59F3000A4F68 /* Mocker.swift */; };
+		D3C0F88227ED5A69000A4F68 /* CarListMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F88127ED5A69000A4F68 /* CarListMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,10 @@
 		D3C0F86F27ECCD75000A4F68 /* CarMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewModel.swift; sourceTree = "<group>"; };
 		D3C0F87327ECD631000A4F68 /* CarMapFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapFactory.swift; sourceTree = "<group>"; };
 		D3C0F87727ECEB15000A4F68 /* CarMapViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewState.swift; sourceTree = "<group>"; };
+		D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListFactoryTests.swift; sourceTree = "<group>"; };
+		D3C0F87C27ED57AF000A4F68 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		D3C0F87F27ED59F3000A4F68 /* Mocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
+		D3C0F88127ED5A69000A4F68 /* CarListMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +167,10 @@
 		D3C0F81E27EB2D0D000A4F68 /* SixtAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				D3C0F87E27ED59E3000A4F68 /* Mocker */,
 				D3C0F85327EB70A1000A4F68 /* Features */,
 				D3C0F81F27EB2D0D000A4F68 /* SixtAppTests.swift */,
+				D3C0F87C27ED57AF000A4F68 /* NetworkServiceMock.swift */,
 			);
 			path = SixtAppTests;
 			sourceTree = "<group>";
@@ -273,6 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				D3C0F85527EB7759000A4F68 /* CarListViewModelTests.swift */,
+				D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */,
+				D3C0F88127ED5A69000A4F68 /* CarListMapperTests.swift */,
 			);
 			path = CarList;
 			sourceTree = "<group>";
@@ -311,6 +323,14 @@
 				D3C0F86727EB86F6000A4F68 /* Error.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		D3C0F87E27ED59E3000A4F68 /* Mocker */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0F87F27ED59F3000A4F68 /* Mocker.swift */,
+			);
+			path = Mocker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,8 +493,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C0F88027ED59F3000A4F68 /* Mocker.swift in Sources */,
+				D3C0F87D27ED57AF000A4F68 /* NetworkServiceMock.swift in Sources */,
 				D3C0F82027EB2D0D000A4F68 /* SixtAppTests.swift in Sources */,
+				D3C0F87A27ED546F000A4F68 /* CarListFactoryTests.swift in Sources */,
 				D3C0F85627EB7759000A4F68 /* CarListViewModelTests.swift in Sources */,
+				D3C0F88227ED5A69000A4F68 /* CarListMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
