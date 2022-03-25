@@ -52,7 +52,7 @@ struct CarListItemView: View {
 
 struct CarListItem_Previews: PreviewProvider {
     static var previews: some View {
-        let carViewData = CarViewData(identifier: "abc",
+        let carViewData = CarViewData(id: "abc",
                                       modelName: "MINI",
                                       name: "Vanessa",
                                       make: "BMW",

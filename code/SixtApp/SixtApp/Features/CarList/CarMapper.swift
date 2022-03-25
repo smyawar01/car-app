@@ -18,7 +18,7 @@ struct CarMapperImpl: CarMapper {
         
         return cars.map { car in
             
-            CarViewData(identifier: car.id,
+            CarViewData(id: car.id,
                         modelName: car.modelName,
                         name: car.name,
                         make: car.make,

@@ -39,7 +39,7 @@
 		D3C0F87A27ED546F000A4F68 /* CarListFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */; };
 		D3C0F87D27ED57AF000A4F68 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87C27ED57AF000A4F68 /* NetworkServiceMock.swift */; };
 		D3C0F88027ED59F3000A4F68 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F87F27ED59F3000A4F68 /* Mocker.swift */; };
-		D3C0F88227ED5A69000A4F68 /* CarListMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F88127ED5A69000A4F68 /* CarListMapperTests.swift */; };
+		D3C0F88427ED5BCE000A4F68 /* CarMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F88327ED5BCE000A4F68 /* CarMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +95,7 @@
 		D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListFactoryTests.swift; sourceTree = "<group>"; };
 		D3C0F87C27ED57AF000A4F68 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
 		D3C0F87F27ED59F3000A4F68 /* Mocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
-		D3C0F88127ED5A69000A4F68 /* CarListMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListMapperTests.swift; sourceTree = "<group>"; };
+		D3C0F88327ED5BCE000A4F68 /* CarMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,7 +284,7 @@
 			children = (
 				D3C0F85527EB7759000A4F68 /* CarListViewModelTests.swift */,
 				D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */,
-				D3C0F88127ED5A69000A4F68 /* CarListMapperTests.swift */,
+				D3C0F88327ED5BCE000A4F68 /* CarMapperTests.swift */,
 			);
 			path = CarList;
 			sourceTree = "<group>";
@@ -494,11 +494,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C0F88027ED59F3000A4F68 /* Mocker.swift in Sources */,
+				D3C0F88427ED5BCE000A4F68 /* CarMapperTests.swift in Sources */,
 				D3C0F87D27ED57AF000A4F68 /* NetworkServiceMock.swift in Sources */,
 				D3C0F82027EB2D0D000A4F68 /* SixtAppTests.swift in Sources */,
 				D3C0F87A27ED546F000A4F68 /* CarListFactoryTests.swift in Sources */,
 				D3C0F85627EB7759000A4F68 /* CarListViewModelTests.swift in Sources */,
-				D3C0F88227ED5A69000A4F68 /* CarListMapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

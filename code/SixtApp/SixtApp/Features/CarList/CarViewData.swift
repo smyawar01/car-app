@@ -8,10 +8,9 @@
 import Foundation
 import CoreLocation
 
-struct CarViewData: Identifiable {
+struct CarViewData: Identifiable, Equatable {
     
-    let id = UUID()
-    let identifier: String
+    let id: String
     let modelName: String
     let name: String
     let make: String
