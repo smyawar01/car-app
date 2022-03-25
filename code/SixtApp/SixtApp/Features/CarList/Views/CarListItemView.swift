@@ -11,11 +11,12 @@ struct CarListItemView: View {
     
     let viewData: CarViewData
     var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Title(text: "\(viewData.make) \(viewData.name) \(viewData.modelName)")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(5.0)
+                .background(Color("AccentColor"))
         HStack {
-            
-            VStack(alignment: .leading){
-                Title(text: "\(viewData.make) \(viewData.name) \(viewData.modelName)")
-                    .lineLimit(2)
                 AsyncImage(url: URL(string: viewData.carImageUrl)) { image in
                     
                     image
@@ -23,19 +24,28 @@ struct CarListItemView: View {
                         .scaledToFit()
 
                 } placeholder: {
-                    
                     Image("car.placeholder")
                         .resizable()
                         .scaledToFit()
                 }
-                .frame(width: 200, height: 100)
-
-            }
+                .frame(width: 150, height: 75)
+            
             VStack(alignment: .leading) {
-                Text(viewData.licensePlate)
-                Text(viewData.innerCleanliness)
-                Text(viewData.carImageUrl)
+                HStack {
+                    Image("license.plate")
+                        .scaledToFit()
+                        .frame(width: 40, height: 20)
+                    Text(viewData.licensePlate)
+                }
+                HStack {
+                    Image("cleanliness")
+                        .scaledToFit()
+                        .frame(width: 40, height: 20)
+                    Text(viewData.innerCleanliness)
+                }
             }
+        }
+        .padding(.bottom, 10)
         }
     }
 }

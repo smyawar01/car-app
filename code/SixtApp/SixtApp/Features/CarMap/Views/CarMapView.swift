@@ -19,11 +19,14 @@ struct CarMapView: View {
             
             Map(coordinateRegion: $region,
                 annotationItems: cars) {
-                MapMarker(coordinate:
-                            CLLocationCoordinate2D(latitude: $0.latitude,
-                                                   longitude: $0.longitude), tint: Color("AccentColor"))
-                
+                MapAnnotation(coordinate:
+                                CLLocationCoordinate2D(latitude: $0.latitude,
+                                                       longitude: $0.longitude)) {
+                    
+                    Image("map.pin")
+                }
             }
+                .edgesIgnoringSafeArea(.top)
                 .onAppear {
                     
                     viewModel.didStateChange = { state in

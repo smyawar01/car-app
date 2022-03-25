@@ -33,6 +33,7 @@ struct CarListView<Model>: View where Model: CarListViewModel {
             List(cars, id: \.id) { car in
                 
                 CarListItemView(viewData: car)
+                    .listRowInsets(EdgeInsets())
             }
         case .error(let error):
             
