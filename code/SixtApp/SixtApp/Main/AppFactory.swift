@@ -2,7 +2,7 @@
 //  AppFactory.swift
 //  SixtApp
 //
-//  Created by Yawar Ali on 24/03/2022.
+//  Created by Yawar Muhammad on 24/03/2022.
 //
 
 import Foundation
@@ -16,6 +16,8 @@ struct AppFactory {
         decoder.keyDecodingStrategy = .useDefaultKeys
         networkService = NetworkSerivceImpl(session: URLSession.shared,
                                             decoder: decoder)
+        
+//        networkService = AFNetworkServiceImpl()
     }
 }
 

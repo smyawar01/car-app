@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol NetworkService {
     
@@ -47,5 +48,25 @@ struct NetworkSerivceImpl: NetworkService {
             }
         }
         .resume()
+    }
+}
+
+struct AFNetworkServiceImpl: NetworkService {
+    
+    func execute<Model>(url: URL, completion: @escaping ((Result<Model, Error>) -> Void)) where Model : Decodable {
+        
+        let request = AF.request(url)
+        request.responseDecodable(of: Model.self) { dataResponse in
+            
+            switch dataResponse.result {
+                
+            case .success(let model):
+                completion(.success(model))
+            case .failure(let afError):
+                if let error = afError as? Error {
+                    completion(.failure(error))
+                }
+            }
+        }
     }
 }
