@@ -30,17 +30,13 @@ struct CarListItemView: View {
                 }
                 .frame(width: 150, height: 75)
             
-            VStack(alignment: .leading) {
+            VStack {
                 HStack {
                     Image("license.plate")
-                        .scaledToFit()
-                        .frame(width: 40, height: 20)
                     Text(viewData.licensePlate)
                 }
                 HStack {
                     Image("cleanliness")
-                        .scaledToFit()
-                        .frame(width: 40, height: 20)
                     Text(viewData.innerCleanliness)
                 }
             }

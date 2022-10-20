@@ -63,7 +63,7 @@ struct AFNetworkServiceImpl: NetworkService {
             case .success(let model):
                 completion(.success(model))
             case .failure(let afError):
-                if let error = afError as? Error {
+                if let error = afError as Error? {
                     completion(.failure(error))
                 }
             }

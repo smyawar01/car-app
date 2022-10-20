@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		0385776029006B0700E3FFED /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0385775F29006B0700E3FFED /* Alamofire */; };
 		038577632900AF3800E3FFED /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 038577622900AF3800E3FFED /* SnapshotTesting */; };
+		0385776B2900C91A00E3FFED /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0385776A2900C91A00E3FFED /* SnapshotTesting */; };
+		0385776E2900C94700E3FFED /* CarListItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F82927EB2D0D000A4F68 /* CarListItemTests.swift */; };
+		038577702900D79900E3FFED /* CarListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385776F2900D79900E3FFED /* CarListViewTests.swift */; };
 		D34B7CC827EDA9AB0021F86F /* CarRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CC727EDA9AB0021F86F /* CarRepositoryTests.swift */; };
 		D34B7CCA27EDAA7F0021F86F /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CC927EDAA7F0021F86F /* XCTestCase+Additions.swift */; };
 		D34B7CCC27EDAB3C0021F86F /* CarRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CCB27EDAB3C0021F86F /* CarRepositoryStub.swift */; };
-		D3C0F80F27EB2D0B000A4F68 /* SixtAppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F80E27EB2D0B000A4F68 /* SixtAppMain.swift */; };
-		D3C0F81127EB2D0B000A4F68 /* SixtAppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F81027EB2D0B000A4F68 /* SixtAppTabView.swift */; };
+		D3C0F80F27EB2D0B000A4F68 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F80E27EB2D0B000A4F68 /* AppMain.swift */; };
+		D3C0F81127EB2D0B000A4F68 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F81027EB2D0B000A4F68 /* AppTabView.swift */; };
 		D3C0F81327EB2D0D000A4F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C0F81227EB2D0D000A4F68 /* Assets.xcassets */; };
 		D3C0F81627EB2D0D000A4F68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C0F81527EB2D0D000A4F68 /* Preview Assets.xcassets */; };
-		D3C0F82027EB2D0D000A4F68 /* SixtAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F81F27EB2D0D000A4F68 /* SixtAppTests.swift */; };
-		D3C0F82A27EB2D0D000A4F68 /* SixtAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F82927EB2D0D000A4F68 /* SixtAppUITests.swift */; };
 		D3C0F82C27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F82B27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift */; };
 		D3C0F83B27EB4826000A4F68 /* CarListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F83A27EB4826000A4F68 /* CarListView.swift */; };
 		D3C0F83F27EB485D000A4F68 /* CarMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F83E27EB485D000A4F68 /* CarMapView.swift */; };
@@ -65,18 +66,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0385776F2900D79900E3FFED /* CarListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewTests.swift; sourceTree = "<group>"; };
 		D34B7CC727EDA9AB0021F86F /* CarRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepositoryTests.swift; sourceTree = "<group>"; };
 		D34B7CC927EDAA7F0021F86F /* XCTestCase+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Additions.swift"; sourceTree = "<group>"; };
 		D34B7CCB27EDAB3C0021F86F /* CarRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepositoryStub.swift; sourceTree = "<group>"; };
 		D3C0F80B27EB2D0B000A4F68 /* SixtApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3C0F80E27EB2D0B000A4F68 /* SixtAppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppMain.swift; sourceTree = "<group>"; };
-		D3C0F81027EB2D0B000A4F68 /* SixtAppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppTabView.swift; sourceTree = "<group>"; };
+		D3C0F80E27EB2D0B000A4F68 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		D3C0F81027EB2D0B000A4F68 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		D3C0F81227EB2D0D000A4F68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3C0F81527EB2D0D000A4F68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3C0F81B27EB2D0D000A4F68 /* SixtAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3C0F81F27EB2D0D000A4F68 /* SixtAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppTests.swift; sourceTree = "<group>"; };
 		D3C0F82527EB2D0D000A4F68 /* SixtAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3C0F82927EB2D0D000A4F68 /* SixtAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppUITests.swift; sourceTree = "<group>"; };
+		D3C0F82927EB2D0D000A4F68 /* CarListItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemTests.swift; sourceTree = "<group>"; };
 		D3C0F82B27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3C0F83A27EB4826000A4F68 /* CarListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListView.swift; sourceTree = "<group>"; };
 		D3C0F83E27EB485D000A4F68 /* CarMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapView.swift; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0385776B2900C91A00E3FFED /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +135,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		038577692900C91A00E3FFED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3C0F80227EB2D0B000A4F68 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +149,7 @@
 				D3C0F81E27EB2D0D000A4F68 /* SixtAppTests */,
 				D3C0F82827EB2D0D000A4F68 /* SixtAppUITests */,
 				D3C0F80C27EB2D0B000A4F68 /* Products */,
+				038577692900C91A00E3FFED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,7 +189,6 @@
 			children = (
 				D3C0F87E27ED59E3000A4F68 /* Mocker */,
 				D3C0F85327EB70A1000A4F68 /* Features */,
-				D3C0F81F27EB2D0D000A4F68 /* SixtAppTests.swift */,
 				D3C0F87C27ED57AF000A4F68 /* NetworkServiceMock.swift */,
 				D34B7CC927EDAA7F0021F86F /* XCTestCase+Additions.swift */,
 			);
@@ -189,7 +198,6 @@
 		D3C0F82827EB2D0D000A4F68 /* SixtAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D3C0F82927EB2D0D000A4F68 /* SixtAppUITests.swift */,
 				D3C0F82B27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift */,
 			);
 			path = SixtAppUITests;
@@ -199,8 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				D3C0F86D27ECA454000A4F68 /* AppFactory.swift */,
-				D3C0F80E27EB2D0B000A4F68 /* SixtAppMain.swift */,
-				D3C0F81027EB2D0B000A4F68 /* SixtAppTabView.swift */,
+				D3C0F80E27EB2D0B000A4F68 /* AppMain.swift */,
+				D3C0F81027EB2D0B000A4F68 /* AppTabView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -293,6 +301,8 @@
 		D3C0F85427EB772C000A4F68 /* CarList */ = {
 			isa = PBXGroup;
 			children = (
+				0385776F2900D79900E3FFED /* CarListViewTests.swift */,
+				D3C0F82927EB2D0D000A4F68 /* CarListItemTests.swift */,
 				D3C0F85527EB7759000A4F68 /* CarListViewModelTests.swift */,
 				D3C0F87927ED546F000A4F68 /* CarListFactoryTests.swift */,
 				D3C0F88327ED5BCE000A4F68 /* CarMapperTests.swift */,
@@ -380,9 +390,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				0385776D2900C92700E3FFED /* PBXTargetDependency */,
 				D3C0F81D27EB2D0D000A4F68 /* PBXTargetDependency */,
 			);
 			name = SixtAppTests;
+			packageProductDependencies = (
+				0385776A2900C91A00E3FFED /* SnapshotTesting */,
+			);
 			productName = SixtAppTests;
 			productReference = D3C0F81B27EB2D0D000A4F68 /* SixtAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -488,9 +502,9 @@
 			files = (
 				D3C0F87427ECD631000A4F68 /* CarMapFactory.swift in Sources */,
 				D3C0F85A27EB7A1A000A4F68 /* CarRepository.swift in Sources */,
-				D3C0F81127EB2D0B000A4F68 /* SixtAppTabView.swift in Sources */,
+				D3C0F81127EB2D0B000A4F68 /* AppTabView.swift in Sources */,
 				D3C0F86527EB7F53000A4F68 /* NetworkRequestConvertable.swift in Sources */,
-				D3C0F80F27EB2D0B000A4F68 /* SixtAppMain.swift in Sources */,
+				D3C0F80F27EB2D0B000A4F68 /* AppMain.swift in Sources */,
 				D3C0F86E27ECA454000A4F68 /* AppFactory.swift in Sources */,
 				D3C0F84E27EB68F1000A4F68 /* Car.swift in Sources */,
 				D3C0F84327EB50B6000A4F68 /* CarListItemView.swift in Sources */,
@@ -520,8 +534,9 @@
 				D3C0F88027ED59F3000A4F68 /* Mocker.swift in Sources */,
 				D3C0F88427ED5BCE000A4F68 /* CarMapperTests.swift in Sources */,
 				D3C0F87D27ED57AF000A4F68 /* NetworkServiceMock.swift in Sources */,
-				D3C0F82027EB2D0D000A4F68 /* SixtAppTests.swift in Sources */,
 				D3C0F87A27ED546F000A4F68 /* CarListFactoryTests.swift in Sources */,
+				038577702900D79900E3FFED /* CarListViewTests.swift in Sources */,
+				0385776E2900C94700E3FFED /* CarListItemTests.swift in Sources */,
 				D3C0F85627EB7759000A4F68 /* CarListViewModelTests.swift in Sources */,
 				D34B7CCA27EDAA7F0021F86F /* XCTestCase+Additions.swift in Sources */,
 				D34B7CC827EDA9AB0021F86F /* CarRepositoryTests.swift in Sources */,
@@ -533,13 +548,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C0F82C27EB2D0D000A4F68 /* SixtAppUITestsLaunchTests.swift in Sources */,
-				D3C0F82A27EB2D0D000A4F68 /* SixtAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0385776D2900C92700E3FFED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 0385776C2900C92700E3FFED /* SnapshotTesting */;
+		};
 		D3C0F81D27EB2D0D000A4F68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D3C0F80A27EB2D0B000A4F68 /* SixtApp */;
@@ -793,6 +811,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixt.sixtApp.SixtAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -816,6 +835,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixt.sixtApp.SixtAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -892,6 +912,16 @@
 			productName = Alamofire;
 		};
 		038577622900AF3800E3FFED /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038577612900AF3800E3FFED /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		0385776A2900C91A00E3FFED /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038577612900AF3800E3FFED /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		0385776C2900C92700E3FFED /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 038577612900AF3800E3FFED /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
