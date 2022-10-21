@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-struct SixtAppTabView: View {
+struct AppTabView: View {
     
     let carListFactory: CarListFactory
     let carMapFactory: CarMapFactory
@@ -43,7 +43,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
         let appFactory = AppFactory()
-        SixtAppTabView(carListFactory: appFactory.makeCarListFactory(),
+        AppTabView(carListFactory: appFactory.makeCarListFactory(),
                        carMapFactory: appFactory.makeCarMapFactory())
     }
 }

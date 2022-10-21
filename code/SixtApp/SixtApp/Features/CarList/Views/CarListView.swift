@@ -1,8 +1,8 @@
 //
 //  CarListView.swift
-//  SixtApp
+//  CarApp
 //
-//  Created by Yawar Ali on 23/03/2022.
+//  Created by Yawar Muhammad on 23/03/2022.
 //
 
 import SwiftUI
