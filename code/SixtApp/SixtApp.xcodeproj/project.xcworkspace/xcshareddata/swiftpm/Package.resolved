@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "networkmodule",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bassamfouad-10p/NetworkModule.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6ce3249bb6638f34efe7be72b316938e528e3aab"
+      }
+    },
+    {
       "identity" : "swift-snapshot-testing",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-snapshot-testing",

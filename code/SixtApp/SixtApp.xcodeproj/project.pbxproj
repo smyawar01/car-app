@@ -12,6 +12,7 @@
 		0385776B2900C91A00E3FFED /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 0385776A2900C91A00E3FFED /* SnapshotTesting */; };
 		0385776E2900C94700E3FFED /* CarListItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F82927EB2D0D000A4F68 /* CarListItemTests.swift */; };
 		038577702900D79900E3FFED /* CarListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385776F2900D79900E3FFED /* CarListViewTests.swift */; };
+		7185E6CE29258AF7008F991B /* NetworkModule in Frameworks */ = {isa = PBXBuildFile; productRef = 7185E6CD29258AF7008F991B /* NetworkModule */; };
 		D34B7CC827EDA9AB0021F86F /* CarRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CC727EDA9AB0021F86F /* CarRepositoryTests.swift */; };
 		D34B7CCA27EDAA7F0021F86F /* XCTestCase+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CC927EDAA7F0021F86F /* XCTestCase+Additions.swift */; };
 		D34B7CCC27EDAB3C0021F86F /* CarRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B7CCB27EDAB3C0021F86F /* CarRepositoryStub.swift */; };
@@ -32,9 +33,7 @@
 		D3C0F85827EB7894000A4F68 /* FetchCarsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85727EB7894000A4F68 /* FetchCarsUseCase.swift */; };
 		D3C0F85A27EB7A1A000A4F68 /* CarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85927EB7A1A000A4F68 /* CarRepository.swift */; };
 		D3C0F85C27EB7AFA000A4F68 /* CarRepositoryRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85B27EB7AFA000A4F68 /* CarRepositoryRemote.swift */; };
-		D3C0F86027EB7C0F000A4F68 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F85F27EB7C0F000A4F68 /* NetworkService.swift */; };
 		D3C0F86327EB7F07000A4F68 /* CarRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86227EB7F07000A4F68 /* CarRequest.swift */; };
-		D3C0F86527EB7F53000A4F68 /* NetworkRequestConvertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86427EB7F53000A4F68 /* NetworkRequestConvertable.swift */; };
 		D3C0F86827EB86F6000A4F68 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86727EB86F6000A4F68 /* Error.swift */; };
 		D3C0F86A27EC81B8000A4F68 /* CarMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86927EC81B8000A4F68 /* CarMapper.swift */; };
 		D3C0F86C27ECA15C000A4F68 /* CarListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C0F86B27ECA15C000A4F68 /* CarListFactory.swift */; };
@@ -91,9 +90,7 @@
 		D3C0F85727EB7894000A4F68 /* FetchCarsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCarsUseCase.swift; sourceTree = "<group>"; };
 		D3C0F85927EB7A1A000A4F68 /* CarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepository.swift; sourceTree = "<group>"; };
 		D3C0F85B27EB7AFA000A4F68 /* CarRepositoryRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepositoryRemote.swift; sourceTree = "<group>"; };
-		D3C0F85F27EB7C0F000A4F68 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		D3C0F86227EB7F07000A4F68 /* CarRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRequest.swift; sourceTree = "<group>"; };
-		D3C0F86427EB7F53000A4F68 /* NetworkRequestConvertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestConvertable.swift; sourceTree = "<group>"; };
 		D3C0F86727EB86F6000A4F68 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		D3C0F86927EC81B8000A4F68 /* CarMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapper.swift; sourceTree = "<group>"; };
 		D3C0F86B27ECA15C000A4F68 /* CarListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListFactory.swift; sourceTree = "<group>"; };
@@ -113,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0385776029006B0700E3FFED /* Alamofire in Frameworks */,
+				7185E6CE29258AF7008F991B /* NetworkModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,8 +323,6 @@
 			isa = PBXGroup;
 			children = (
 				D3C0F86127EB7EE9000A4F68 /* Requests */,
-				D3C0F85F27EB7C0F000A4F68 /* NetworkService.swift */,
-				D3C0F86427EB7F53000A4F68 /* NetworkRequestConvertable.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -374,6 +370,7 @@
 			name = SixtApp;
 			packageProductDependencies = (
 				0385775F29006B0700E3FFED /* Alamofire */,
+				7185E6CD29258AF7008F991B /* NetworkModule */,
 			);
 			productName = SixtApp;
 			productReference = D3C0F80B27EB2D0B000A4F68 /* SixtApp.app */;
@@ -457,6 +454,7 @@
 			packageReferences = (
 				0385775E29006B0700E3FFED /* XCRemoteSwiftPackageReference "Alamofire" */,
 				038577612900AF3800E3FFED /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				7185E6CC29258AF7008F991B /* XCRemoteSwiftPackageReference "NetworkModule" */,
 			);
 			productRefGroup = D3C0F80C27EB2D0B000A4F68 /* Products */;
 			projectDirPath = "";
@@ -503,14 +501,12 @@
 				D3C0F87427ECD631000A4F68 /* CarMapFactory.swift in Sources */,
 				D3C0F85A27EB7A1A000A4F68 /* CarRepository.swift in Sources */,
 				D3C0F81127EB2D0B000A4F68 /* AppTabView.swift in Sources */,
-				D3C0F86527EB7F53000A4F68 /* NetworkRequestConvertable.swift in Sources */,
 				D3C0F80F27EB2D0B000A4F68 /* AppMain.swift in Sources */,
 				D3C0F86E27ECA454000A4F68 /* AppFactory.swift in Sources */,
 				D3C0F84E27EB68F1000A4F68 /* Car.swift in Sources */,
 				D3C0F84327EB50B6000A4F68 /* CarListItemView.swift in Sources */,
 				D3C0F86C27ECA15C000A4F68 /* CarListFactory.swift in Sources */,
 				D3C0F83F27EB485D000A4F68 /* CarMapView.swift in Sources */,
-				D3C0F86027EB7C0F000A4F68 /* NetworkService.swift in Sources */,
 				D3C0F85227EB6FE8000A4F68 /* CarListViewState.swift in Sources */,
 				D3C0F87027ECCD75000A4F68 /* CarMapViewModel.swift in Sources */,
 				D3C0F87827ECEB15000A4F68 /* CarMapViewState.swift in Sources */,
@@ -903,6 +899,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		7185E6CC29258AF7008F991B /* XCRemoteSwiftPackageReference "NetworkModule" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bassamfouad-10p/NetworkModule.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -925,6 +929,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 038577612900AF3800E3FFED /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
 			productName = SnapshotTesting;
+		};
+		7185E6CD29258AF7008F991B /* NetworkModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7185E6CC29258AF7008F991B /* XCRemoteSwiftPackageReference "NetworkModule" */;
+			productName = NetworkModule;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
