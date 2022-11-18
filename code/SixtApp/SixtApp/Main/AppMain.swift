@@ -8,11 +8,11 @@
 import SwiftUI
 
 @main
-struct SixtAppMain: App {
+struct AppMain: App {
     let appFactory = AppFactory()
     var body: some Scene {
         WindowGroup {
-            SixtAppTabView(carListFactory: appFactory.makeCarListFactory(),
+            AppTabView(carListFactory: appFactory.makeCarListFactory(),
                            carMapFactory: appFactory.makeCarMapFactory())
         }
     }

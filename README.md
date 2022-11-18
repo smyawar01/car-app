@@ -1,2 +1,2 @@
-# sixt-app
-I was tasked to create a small iOS app as part of my hiring process in Sixt.
+# car-app
+I created a small iOS app to practice MVVM + Clean Architecture with testibility at every level.
