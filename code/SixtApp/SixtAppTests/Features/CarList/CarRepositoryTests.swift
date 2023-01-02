@@ -24,7 +24,7 @@ final class CarRepositoryTests: XCTestCase {
             self.sut.getAll { result in
                 switch result {
                 case .success(let cars):
-                    let expected = [Car]()
+                    let expected = [CarDTO]()
 
                     XCTAssertEqual(cars, expected)
                     expectation.fulfill()
@@ -58,7 +58,7 @@ private final class CarRemoteRepositoryStub: CarRepository {
     
     var success = true
     
-    func getAll(completion: @escaping (Result<[Car], Error>) -> Void) {
+    func getAll(completion: @escaping (Result<[CarDTO], Error>) -> Void) {
         guard success else {
             completion(.failure(Mocker.StubError.fake))
             return

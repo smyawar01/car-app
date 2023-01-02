@@ -10,6 +10,7 @@ import Foundation
 struct CarListFactory {
     
     let networkService: NetworkService
+    let databaseService: DBService
     
     func makeModel() -> some CarListViewModel {
         
@@ -33,6 +34,13 @@ private extension CarListFactory {
     private func makeCarRepository() -> CarRepository {
         
         let remoteRepository = CarRepositoryRemote(networkService: networkService)
-        return CarRepositoryImpl(carRepositoryRemote: remoteRepository)
+        let localRepository = CarRepositoryLocal(service: databaseService,
+                                                 request: makeRequest())
+        return CarRepositoryImpl(carRepositoryRemote: remoteRepository,
+                                 carRepositoryLocal: localRepository)
+    }
+    private func makeRequest() -> DBRequest {
+        
+        return CoreDataRequestBuilder().build()
     }
 }

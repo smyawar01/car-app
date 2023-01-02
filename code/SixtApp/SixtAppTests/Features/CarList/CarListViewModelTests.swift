@@ -31,7 +31,7 @@ class CarListViewModelTests: XCTestCase {
 
 class FetchCarsUseCaseStub: FetchCarsUseCase {
     var onExecuted: Response?
-    var mockResult: Result<([Car], [CarViewData]), Error>?
+    var mockResult: Result<([CarDTO], [CarViewData]), Error>?
     func execute() {
         
         onExecuted?(mockResult!)

@@ -59,7 +59,7 @@ private extension CarMapViewModelImpl {
             self.didStateChange?(state)
         }
     }
-    func regionCenter(from cars: [Car]) -> (lat: Double, lon: Double) {
+    func regionCenter(from cars: [CarDTO]) -> (lat: Double, lon: Double) {
         
         let maxLatCar = cars.max { $0.latitude < $1.latitude }
         let minLatCar = cars.min { $0.latitude < $1.latitude }

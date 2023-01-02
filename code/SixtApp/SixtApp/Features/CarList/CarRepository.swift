@@ -9,14 +9,20 @@ import Foundation
 
 protocol CarRepository {
     
-    func getAll(completion: @escaping ((Result<[Car], Error>) -> Void))
+    func getAll(completion: @escaping ((Result<[CarDTO], Error>) -> Void))
 }
 struct CarRepositoryImpl: CarRepository {
     
     let carRepositoryRemote: CarRepository
+    let carRepositoryLocal: CarRepository
     
-    func getAll(completion: @escaping ((Result<[Car], Error>) -> Void)) {
+    let forceUpdate: Bool
+    
+    func getAll(completion: @escaping ((Result<[CarDTO], Error>) -> Void)) {
         
-        carRepositoryRemote.getAll(completion: completion)
+        if forceUpdate {
+            
+            carRepositoryRemote.getAll(completion: completion)
+        }
     }
 }

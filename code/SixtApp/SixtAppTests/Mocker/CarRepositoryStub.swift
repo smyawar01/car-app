@@ -12,14 +12,14 @@ struct CarRepositoryStub: CarRepository {
     
     var success = true
     
-    func getAll(completion: @escaping ((Result<[Car], Error>) -> Void)) {
+    func getAll(completion: @escaping ((Result<[CarDTO], Error>) -> Void)) {
         
         guard success else {
             
             return completion(.failure(Mocker.StubError.fake))
         }
         
-        let cars: [Car] = [
+        let cars: [CarDTO] = [
             
             .init(id: "WMWSW31030T222518",
                   modelIdentifier: "mini",

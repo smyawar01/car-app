@@ -9,12 +9,12 @@ import Foundation
 
 protocol CarMapper {
     
-    func map(cars: [Car]) -> [CarViewData]
+    func map(cars: [CarDTO]) -> [CarViewData]
 }
 
 struct CarMapperImpl: CarMapper {
     
-    func map(cars: [Car]) -> [CarViewData] {
+    func map(cars: [CarDTO]) -> [CarViewData] {
         
         return cars.map { car in
             

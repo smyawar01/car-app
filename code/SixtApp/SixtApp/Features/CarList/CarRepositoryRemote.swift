@@ -11,7 +11,7 @@ struct CarRepositoryRemote: CarRepository {
     
     let networkService: NetworkService
     
-    func getAll(completion: @escaping ((Result<[Car], Error>) -> Void)) {
+    func getAll(completion: @escaping ((Result<[CarDTO], Error>) -> Void)) {
         
         networkService.execute(url: URL(string: "https://cdn.sixt.io/codingtask/cars")!,
                                completion: completion)

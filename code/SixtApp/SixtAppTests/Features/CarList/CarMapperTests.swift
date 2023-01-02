@@ -31,7 +31,7 @@ final class CarMapperTests: XCTestCase {
 
 private extension CarMapperTests {
     
-    func makeCar() -> Car {
+    func makeCar() -> CarDTO {
         .init(id: "WMWSW31030T222518",
               modelIdentifier: "mini",
               modelName: "MINI",

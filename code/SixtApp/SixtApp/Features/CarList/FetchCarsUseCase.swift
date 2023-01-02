@@ -9,7 +9,7 @@ import Foundation
 
 protocol FetchCarsUseCase: AnyObject {
     
-    typealias Response = ((Result<([Car], [CarViewData]), Error>) -> Void)
+    typealias Response = ((Result<([CarDTO], [CarViewData]), Error>) -> Void)
     var onExecuted: Response? { get set }
     func execute()
 }
