@@ -53,7 +53,7 @@ struct NetworkSerivceImpl: NetworkService {
 
 struct AFNetworkServiceImpl: NetworkService {
     
-    func execute<Model>(url: URL, completion: @escaping ((Result<Model, Error>) -> Void)) where Model : Decodable {
+    func execute<Model: Decodable>(url: URL, completion: @escaping ((Result<Model, Error>) -> Void)) {
         
         let request = AF.request(url)
         request.responseDecodable(of: Model.self) { dataResponse in

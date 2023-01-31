@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CarDTO: Decodable {
+struct Car: Decodable {
     
     var id: String
     var name: String
