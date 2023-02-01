@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import CoreData
 
 struct CarListFactory {
     
     let networkService: NetworkService
+    let databaseService: CoreDataServiceImpl
     
     func makeModel() -> some CarListViewModel {
         
@@ -32,7 +34,7 @@ private extension CarListFactory {
     
     private func makeCarRepository() -> CarRepository {
         
-        let remoteRepository = CarRepositoryRemote(networkService: networkService)
-        return CarRepositoryImpl(carRepositoryRemote: remoteRepository)
+        return CarRepositoryImpl(networkService: self.networkService,
+                                 databaseService: self.databaseService)
     }
 }

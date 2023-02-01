@@ -1,28 +1,28 @@
 //
-//  Car.swift
+//  CarDTO.swift
 //  SixtApp
 //
-//  Created by Yawar Ali on 23/03/2022.
+//  Created by muhammad Yawar on 12/29/22.
 //
 
 import Foundation
 
-struct Car: Decodable, Equatable {
+struct Car: Decodable {
     
-    let id: String
-    let modelIdentifier: String
-    let modelName: String
-    let name: String
-    let make: String
-    let group: String
-    let color: String
-    let series: String
-    let fuelType: String
-    let fuelLevel: Double
-    let transmission: String
-    let licensePlate: String
-    let latitude: Double
-    let longitude: Double
-    let innerCleanliness: String
-    let carImageUrl: String
+    var id: String
+    var name: String
+    var modelIdentifier: String
+    var modelName: String
+    var make: String
+    var group: String
+    var color: String
+    var series: String
+    var fuelType: String
+    var fuelLevel: Double
+    var transmission: String
+    var licensePlate: String
+    var latitude: Double
+    var longitude: Double
+    var innerCleanliness: String
+    var carImageUrl: String
 }
