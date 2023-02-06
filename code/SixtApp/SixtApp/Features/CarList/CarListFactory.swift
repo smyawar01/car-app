@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CoreData
+import swift_database_module
 
 struct CarListFactory {
     

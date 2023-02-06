@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import swift_database_module
 
 protocol CarRepository {
     
@@ -42,7 +43,7 @@ struct CarRepositoryImpl: CarRepository {
         
         do {
             
-            try self.databaseService.createAll(entityType: ManagedCar.self,
+            try self.databaseService.saveAll(entityType: ManagedCar.self,
                                                objectCount: models.count) { (managedCar, index) in
                 
                 guard index < models.count, let managedCar = managedCar as? ManagedCar else {
@@ -68,7 +69,7 @@ struct CarRepositoryImpl: CarRepository {
                 managedCar.color = car.color
                 managedCar.name = car.name
             }
-        } catch(let error) {
+        } catch {
             
             fatalError("Error saving data: \(error.localizedDescription)")
         }
